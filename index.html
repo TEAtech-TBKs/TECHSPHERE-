@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Techsphere</title> 
+    <style>
+    body{
+    place-items: center;
+    background:rgb(1, 87, 72);
+    }
+    .tech{
+      color: white;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-weight: 600;
+      font-size: 5rem;
+      width: 30.5rem;
+      height: 6.9rem;
+      position: relative;
+      top: -0.46rem;
+      border-radius: 0.5rem;
+      box-shadow: inset 0.5px 0.5px 5px 3px rgba(1, 255, 217, 0.671);
+      background-color: rgb(1, 87, 72);
+    }
+     .greetings{
+      width: 30rem;
+      height: 6rem;
+      text-align: center; 
+      justify-items: center;
+      place-items: center;
+      border-radius: 0.5rem;
+      padding: 0.7rem;
+      position: relative;
+      margin-top: calc(100vh - 90vh);
+      overflow: hidden;
+      }
+      .greetings:before,.greetings:after{
+      content:"" ;
+      z-index: -1;
+      position: absolute;
+      left: 1rem;
+      top: 1rem;
+      width: 28.5rem;
+      height: 6rem;
+      border-radius: 0.5rem;
+      background: conic-gradient(from 40deg,rgb(0, 247, 255),rgb(0, 132, 255),green,aqua,rgb(242, 255, 252));
+      filter: blur(1.5rem);
+      animation: light 5s  linear infinite;
+      }
+      @keyframes light {
+        0%{
+        transform: rotate(0deg);
+        }
+        100%{
+        transform: rotate(360deg);
+        }
+      }
+     
+      </style>
+  </head>
+  <body>
+   
+  
+      <div class="loader" id="root">
+        <div class='greetings'><div class="tech">Techsphere</div></div>
+      </div>
+      
+
+    
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

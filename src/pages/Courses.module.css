@@ -1,0 +1,86 @@
+.courses {
+  /* align-items: center; */
+  background: url(image010.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.hero {
+  backdrop-filter: blur(0.2rem);
+  text-shadow: 0.12rem 0.12rem 1px black;
+  min-height: 20rem;
+  color: white;
+  padding: 10rem 0 0 5rem;
+  background: linear-gradient(to left,#80008028,rgba(61, 0, 78, 0.598),#0094747b,#0000ff7d);
+}
+.mask{
+  background: url(image02.jpg);
+  background-position: center;background-size:225vh;
+}
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.courseList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 40px;
+  transition:2s;
+  :hover{
+  background-color: #040058;
+  transition:2s;
+  text-shadow: 0.1rem 0.1rem 0.15rem black;
+  }
+}
+
+.courseCard {
+  background: #001122;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+img{
+  width: 10rem;
+  height: 9rem;
+  margin: 0.7rem;
+  border-radius: 5.6rem;
+}
+.courseCard h3 {
+  margin-bottom: 10px;
+}
+
+.viewButton {
+  display: inline-block;
+  background: #00b894;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.viewButton:hover {
+  background: #009474;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .courseList {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .courseCard {
+    width: 90%;
+    max-width: 350px;
+  }
+}

@@ -1,0 +1,74 @@
+:root {
+  --primary-color: #00b894; /* Emerald Green */
+  --secondary-color: #0984e3; /* Bright Blue */
+  --background-color: #121212; /* Very Dark Background */
+  --text-color: #e0e0e0; /* Light Gray Text */
+  --accent-color: #ff4081; /* Accent Pink for highlights */
+  --button-bg: #00b894; /* Green button background */
+  --button-hover-bg: #0984e3; /* Blue button hover */
+  
+}
+*{
+margin:0 ;
+
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.footer {
+  margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+.footer {
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(37, 37, 37);
+  color: var(--text-color);
+}
+
+.footer .social-links a {
+  margin: 0 10px;
+  color: var(--primary-color);
+}
+
+.footer .social-links a:hover {
+  color: var(--accent-color);
+}
+
+.footer .additional-links a {
+  margin: 0 10px;
+  color: var(--text-color);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+button {
+  background-color: var(--button-bg);
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+

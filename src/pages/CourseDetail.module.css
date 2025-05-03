@@ -1,0 +1,60 @@
+.courseDetail {
+  padding: 20px;
+  background-color: #f4f4f9;
+}
+
+.courseDetail h1 {
+  font-size: 2.5rem;
+  color: #001122;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.instructor, .topics, .reviews {
+  margin-top: 30px;
+}
+
+.instructor h2, .topics h3, .reviews h3 {
+  font-size: 1.8rem;
+  color: #003366;
+}
+
+.instructor p, .topics ul, .reviews .review p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.topics ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.topics li {
+  margin: 5px 0;
+}
+
+.review {
+  background-color: #eef2f7;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.enrollBtn {
+  background-color: #00b894;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.enrollBtn:hover {
+  background-color: #009474;
+}

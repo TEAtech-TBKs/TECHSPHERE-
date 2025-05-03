@@ -1,0 +1,141 @@
+.home {
+  text-align: center;
+  color: var(--text-color);
+  background-image: url('image01.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position:center;
+}
+
+/* Hero Section */
+.hero {
+  /* background: radial-gradient(#002244,#002d5a, #004488); */
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  min-height: 300px;
+  
+}
+
+.heroContent h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.heroContent p {
+  font-size: 1.2rem;
+}
+.courses h2{
+  color: #001122;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.ctaButton {
+  display: inline-block;
+  background: #00b894;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.ctaButton:hover {
+  background: #009474;
+}
+
+/* About Section */
+.about {
+  padding: 50px 20px;
+  background: #f5f5f5;
+  color: #001122;
+}
+.about h2 {
+  margin-bottom: 0.7rem;
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+/* Featured Courses */
+.courses {
+  padding: 50px 20px;
+  background: #bedeff;
+}
+
+.courseList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.courseCard {
+  background: #002244;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: left;
+}
+
+.courseCard h3 {
+  margin-bottom: 10px;
+}
+
+/* Join CTA */
+.join {
+  background: #001122;
+  color: white;
+  display:flex;
+  align-items:center;
+  text-align: center;
+}
+.joinCont{
+padding: 50px 20px;
+background:linear-gradient( #001c38c4, #009474a2);
+}
+.join p {
+  font-size: 1.2rem; 
+}
+.img{
+  width: 20rem;
+  height: 15rem;
+  border-radius: 10px;
+  object-fit: cover;
+}
+/* Mobile Styles */
+@media screen and (max-width: 48rem)and(min-width: 18.75rem) {
+  .heroContent h1 {
+    font-size: 2rem;
+  }
+
+  .heroContent p {
+    font-size: 1rem;
+  }
+
+  .ctaButton {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+  }
+
+  .courseList {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .courseCard {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  
+  .joinCont{
+    padding: 50px 20px;
+    background:linear-gradient( #001c38c4, #009474a2);
+    }
+
+  .img {
+    width: 20rem;
+    height: 15rem;
+  }
+}
